@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="static/css/style.css"/>
+    <script type="text/javascript" src="main.js"></script>
+    <title></title>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-md-2">
+        <a href="gallery.html">
+          <button class="secondary_button_small" style="width: 230px; margin-left: 50px;">
+            <i class="fa fa-angle-left"></i>
+            Back
+          </button>
+        </a>
+      </div>
+      <div>
+        <p class="title">EDIT SLIDESHOW</p>
+      </div>
+    </div>
+
+    <div>
+      <p class="heading">SLIDESHOW TIME</p>
+      <p class="sub-heading">After how many minutes would you like the pictures to change?</p>
+      <div class="row">
+        <button class="time-button">5 minutes</button>
+        <button class="time_button_inactive">15 minutes</button>
+        <button class="time_button_inactive">30 minutes</button>
+        <button class="time_button_inactive">60 minutes</button>
+      </div>
+    </div>
+
+    <div class="photo_section">
+      <p class="heading">SLIDESHOW PHOTOS</p>
+      <p class="sub-heading">Pick the photos that you would like to see in the slideshow</p>
+      <div class="row">
+        <button class="tab-button button-active" id="first" value="first" onclick="switchTabs(this)">All from last 30 days</button>
+        <button class="tab-button" id="second" value="second" onclick="switchTabs(this)">Select my own</button>
+      </div>
+
+      <div id="photogallery">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <img class="picadjust" src="static/img/gal1.png" alt="Gallery picture 1">
+            </div>
+            <div class="col-md-4" class="photolayout">
+              <img class="picadjust" src="static/img/gal2.png" id="girl" alt="Gallery picture 2" onclick="addCheck(this,'girl')">
+            </div>
+            <div class="col-md-4">
+              <img class="picadjust" src="static/img/gal3.png" id="group" alt="Gallery picture 3" onclick="addCheck(this,'old')">
+            </div>
+          </div>
+        <div class="row">
+            <div class="col-md-4">
+              <img class="picadjust" src="static/img/gal4.png" alt="Gallery picture 4">
+            </div>
+            <div class="col-md-4">
+              <img class="picadjust" src="static/img/gal5.png" alt="Gallery picture 5">
+            </div>
+            <div class="col-md-4">
+              <img class="picadjust" src="static/img/gal6.png" alt="Gallery picture 6">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="edit_buttons">
+        <a href="edit_show.html">
+            <button class="secondary_button_small" type="button" name="button">CANCEL</button>
+        </a>
+        <a href="image_view.html">
+            <button class="primary_button_small" type="button" name="button">APPLY</button>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
