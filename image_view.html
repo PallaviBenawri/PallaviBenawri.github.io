@@ -2,8 +2,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrpcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="static/css/style.css" />
@@ -14,19 +14,20 @@
     <div class="wrapper">
       <div id="display">
         <div class="mycontainer" onclick="showCTA()">
-          <img src="static/img/baby2.jpg"></img>
+          <img src="static/img/baby2.jpg" style=""></img>
+          <img src="static/img/info_tapscreen.png" id="tapscreen"class="info_overlay" style="top:52%"></img>
           <a href="gallery.html">
           <button class="secondary_button" id="gallery">Gallery</button> </a>
         </div>
         <div class="container caption">
-          <div class="row">
-            <div class="col-md-9">
+          <div class="row" style="width: 100%; height: 120px;">
+            <div class="col-md-9" style="float: left;width: 70%; height: 75px;">
               <div class="user">
                 <p><img src="static/img/john_image.png"></img>
                 John</p>
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3" style="height: 75px; width: 25%; float: right; margin-top: 5%;">
               <p class="time">5 minutes ago</p>
             </div>
           </div>
@@ -37,17 +38,17 @@
             <textarea class="reply_input" placeholder="Write a reply for John" autofocus></textarea>
             <div class="row" id="reply_cta_buttons">
               <button class="secondary_button_small" onclick="hideReply()">CANCEL</button>
-              <button class="primary_button_small" onclick="sendReply()">SEND</button>
+              <button class="primary_button_small" onclick="sendReply()" style="margin-left: 7%;">SEND</button>
             </div>
           </div>
 
           <div class="multiple_replies">
             <hr/>
-            <img src="static/img/replies.png" style="margin-top: 50px;">
+            <img src="static/img/replies.png" style="margin-top: 50px; width: 100%">
           </div>
 
           <div class="row" id="cta_buttons">
-            <button class="primary_button_small" onclick="writeReply()">REPLY</button>
+            <button class="primary_button_small" onclick="writeReply()" style="margin-right: 5%;">REPLY</button>
             <button class="primary_button_small" onclick="makeCall()">CALL</button>
           </div>
         </div>
@@ -65,7 +66,7 @@
         <hr/>
         <div class="row">
           <button class="secondary_button_small" onclick="cancelCall()">CANCEL</button>
-          <button class="primary_button_small">CALL</button>
+          <button class="primary_button_small" style="margin-left: 5%">CALL</button>
         </div>
       </div>
     </div>

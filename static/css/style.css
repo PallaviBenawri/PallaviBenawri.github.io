@@ -8,11 +8,12 @@ body, h1, h2, h3, h4, h5 ,h6 {
 }
 
 .caption {
-  padding: 50px 75px;
-  width: 100%;
+  padding: 0px 75px;
+  padding-bottom: 25px;
+  width: 85%;
   background-color: white;
   position: absolute;
-  bottom: 0;
+  bottom: 20%;
   left: 0;
 }
 
@@ -23,8 +24,8 @@ body, h1, h2, h3, h4, h5 ,h6 {
   height: 600px;
   background-color: white;
   position: absolute;
-  top: 50%;
-  left: 25%;
+  top: 25%;
+  left: 15%;
 }
 
 .name {
@@ -45,11 +46,19 @@ body, h1, h2, h3, h4, h5 ,h6 {
   font-size: 36px;
   color: #6F6F6F;
   text-align: left;
-  margin-left: 75px;
+  margin-left: 50px;
 }
 
 .mycontainer {
   position: relative;
+}
+
+.info_overlay {
+  position: absolute;
+  z-index: 1;
+  top: 60%;
+  left: 50%;
+  width: initial !important;
 }
 
 .mycontainer img {
@@ -186,7 +195,7 @@ h2 {
   height: 85px;
   width: 43%;
   box-shadow: 0px, 2px, 4px, 0px, #000000;
-  margin-left:56px;
+  /* margin-left:56px; */
 }
 
 .secondary_button_small {
@@ -302,4 +311,12 @@ h2 {
 
 #photogallery {
   opacity: 0.7;
+}
+
+.fixed_bottom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  padding-bottom: 5%;
 }

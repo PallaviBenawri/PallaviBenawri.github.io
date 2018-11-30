@@ -15,10 +15,12 @@ function showCTA() {
   if(tapped) {
     $("#cta_buttons").hide()
     $(".multiple_replies").hide()
+    $("#tapscreen").show()
   }
   else {
     $(".caption").slideDown()
     $("#cta_buttons").show()
+    $("#tapscreen").hide()
   }
   tapped = !tapped;
 }
